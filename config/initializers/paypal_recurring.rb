@@ -1,6 +1,6 @@
 PayPal::Recurring.configure do |config|
-  config.sandbox = (ENV['PAYPAL_SANDBOX']=='true')
-  config.username = ENV['PAYPAL_USERNAME']
-  config.password = ENV['PAYPAL_PASSWORD']
-  config.signature = ENV['PAYPAL_SIGNATURE']
+  config.sandbox = Rails.application.secrets.paypal_sandbox
+  config.username = Rails.application.secrets.paypal_username
+  config.password = Rails.application.secrets.paypal_password
+  config.signature = Rails.application.secrets.paypal_signature
 end

@@ -1,0 +1,5 @@
+development:
+  PAYPAL_SANDBOX: true
+  PAYPAL_USERNAME: email_api1.provider.com
+  PAYPAL_PASSWORD: password
+  PAYPAL_SIGNATURE: signature

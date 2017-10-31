@@ -11,8 +11,7 @@ class PaypalSubscription::DefaultOptions
       reference: subscriptable.id,
       description: subscriptable.paypal_description,
       amount: subscriptable.price,
-      currency: 'BRL',
-      locale: 'pt_BR'
+      currency: 'USD'
     }
   end
 end
